@@ -1,0 +1,38 @@
+VERSION ANGLAISE DU MAN, POUR VOIR LA VERSION FRANCAISE, VOIR MAN_FR
+
+NAME
+       pwgen - generate a random password
+
+SYNOPSIS
+       pwgen [OPTIONS] [NUMBER]
+
+DESCRIPTION
+       pwgen generates a random password based on seed of actual time.
+
+       The following options are available:
+
+       • -a, Uses lowercase and uppercase (default)
+
+       • -s, Uses special chars
+
+       • -n, Uses numbers
+
+       This command accepts -- to signal you want to use all the options at the same time.
+
+EXAMPLE
+	  > ./pwgen 24
+	  hhmENfeqCAssKWjFZWWTatKc
+
+	  > ./pwgen -- 32
+	  3U&!^osCh^J@P^b6&7a@Z0i5p1Md@#P^
+
+	  > ./pwgen -a -s 16
+	  r!N#zMM?FWP#grx!
+
+	  > ./pwgen -n 8
+	  19364875
+
+COPYRIGHT
+       2024, Lunnay03020
+
+1.0.0				  Jul 18, 2024

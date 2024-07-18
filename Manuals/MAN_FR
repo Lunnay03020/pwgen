@@ -1,0 +1,38 @@
+FRENCH VERSION OF MAN, FOR ENG VERSION, CHECK MAN_ENG
+
+NOM
+       pwgen - génère un mot de passe aléatoire
+
+COMMENT L'UTILISER
+       pwgen [PARAMETRES] [NOMBRE]
+
+DESCRIPTION
+       pwgen génère un mot de passe aléatoire basé sur une graine liée au moment où vous exécutez la commande.
+
+       Les options suivantes sont disponibles :
+
+       • -a, Utilise des minuscules et des majuscules (Par défaut)
+
+       • -s, Utilise des caractères spéciaux
+
+       • -n, Utilise des nombres
+
+       Cette commande accepte -- pour signaler l'utilisation de toutes les options à la fois.
+
+EXEMPLES
+          > ./pwgen 24
+          hhmENfeqCAssKWjFZWWTatKc
+
+          > ./pwgen -- 32
+          3U&!^osCh^J@P^b6&7a@Z0i5p1Md@#P^
+
+          > ./pwgen -a -s 16
+          r!N#zMM?FWP#grx!
+
+          > ./pwgen -n 8
+          19364875
+
+COPYRIGHT
+       2024, Lunnay03020
+
+1.0.0                             Jul 18, 2024
