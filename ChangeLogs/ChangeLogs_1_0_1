@@ -1,0 +1,20 @@
+FR - Changelogs pour la 1.0.1 :
+
+• Modification de ft_gen qui inclut une fonction ft_random qui génère un
+nombre aléatoire chaque milliseconde, pour assurer l'authenticité du mot de
+passe généré
+• Modification de pwgen.h qui ajoute le prototype de ft_random et ajoute les
+modules math.h et sys/time.h
+• Création du dossier Changelogs qui comportera en détail les logs des futures MAJ 
+• Création du fichier ChangeLogs_1_0_1 que vous lisez actuellement
+• Modification de la version dans le MAN_ENG & MAN_FR
+
+ENG - Changelogs for 1.0.1 :
+
+• Add ft_random function into ft_gen.c file which generates a fully random
+number every millisecond, to ensure password generated authenticity
+• Edit of echo.h which adds ft_random prototype and add modules math.h and
+sys/time.h
+• Add directory Changelogs, which contains the logs for next updates
+• Add ChangeLogs_1_0_1 file, you read it now
+• Edit version in MAN_ENG & MAN_FR

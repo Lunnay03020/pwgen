@@ -6,11 +6,34 @@
 /*   By: vdoignie <vdoignie@student.42.fr>	    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2024/07/17 16:09:27 by vdoignie	       #+#    #+#	      */
-/*   Updated: 2024/07/17 23:37:55 by vdoignie         ###   ########.fr       */
+/*   Updated: 2024/07/18 18:44:00 by vdoignie         ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
 #include "../includes/pwgen.h"
+
+int	ft_random(void)
+{
+	int				i;
+	int				j;
+	int				k;
+	int				millisec;
+	struct timeval	tv;
+
+	gettimeofday(&tv, NULL);
+	millisec = tv.tv_usec / 1000;
+	if (millisec >= 1000)
+	{
+		millisec -= 1000;
+		tv.tv_sec++;
+	}
+	srand(time(NULL) * millisec);
+	j = 2147483647 - rand();
+	k = j % rand() * 45;
+	i = j * k;
+	printf("%d", i);
+	return (i);
+}
 
 void	ft_gen(int k, int i)
 {
@@ -31,7 +54,7 @@ void	ft_gen(int k, int i)
 	letterminus = "aqwzsxedcrfvtgbyhnujikolpm";
 	lettermaximus = "AQWZSXEDCRFVTGBYHNUJIKOLPM";
 	special = "!@#$^&*?";
-	srand(time(NULL));
+	srand((unsigned int)ft_random());
 	while (j < i)
 	{
 		if (k == 0 || k == 1)

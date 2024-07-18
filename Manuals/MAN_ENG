@@ -7,7 +7,7 @@ SYNOPSIS
        pwgen [OPTIONS] [NUMBER]
 
 DESCRIPTION
-       pwgen generates a random password based on seed of actual time.
+       pwgen generates a random password based on random seed generates every milliseconds.
 
        The following options are available:
 
@@ -35,4 +35,4 @@ EXAMPLE
 COPYRIGHT
        2024, Lunnay03020
 
-1.0.0				  Jul 18, 2024
+1.0.1				  Jul 18, 2024
