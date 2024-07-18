@@ -6,7 +6,7 @@
 /*   By: vdoignie <vdoignie@student.42.fr>	    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2024/07/17 16:09:27 by vdoignie	       #+#    #+#	      */
-/*   Updated: 2024/07/18 18:44:00 by vdoignie         ###   ########.fr       */
+/*   Updated: 2024/07/18 19:09:02 by vdoignie         ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int	ft_random(void)
 	j = 2147483647 - rand();
 	k = j % rand() * 45;
 	i = j * k;
-	printf("%d", i);
 	return (i);
 }
 
