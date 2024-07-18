@@ -8,6 +8,6 @@ FR - Voici un générateur complexe de mot de passe, incluant minuscule, majuscu
 ENG - Here is a complex password generator, with lowercase, uppercase, numbers and special chars !
 
 - Execute Makefile file with command make
-- Write ./echo followed by number of chars of your choice (at least 8, up to 32).
+- Write ./pwgen followed by number of chars of your choice (at least 8, up to 32).
 - Press Enter. Et voilà !
 - You can add options -a, -s, and -n ! (Check man).
